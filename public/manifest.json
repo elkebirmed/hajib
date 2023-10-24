@@ -1,0 +1,55 @@
+{
+  "manifest_version": 3,
+  "name": "Hajib",
+  "description": "The Muslim web defender",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon16.png",
+    "32": "images/icon32.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "32": "images/icon32.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "default_locale": "en",
+  "content_scripts": [
+    {
+      "js": ["js/support.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "js": ["js/facebook.js"],
+      "css": ["css/facebook.css"],
+      "matches": ["*://*.facebook.com/*"],
+      "run_at": "document_end"
+    },
+    {
+      "js": ["js/instagram.js"],
+      "css": ["css/instagram.css"],
+      "matches": ["*://*.instagram.com/*"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/*"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "permissions": ["storage", "activeTab", "webNavigation", "webRequest"],
+  "host_permissions": ["<all_urls>"]
+}

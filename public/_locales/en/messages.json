@@ -1,0 +1,14 @@
+{
+  "suggestionRemoved": {
+    "message": "Suggestion removed"
+  },
+  "adRemoved": {
+    "message": "Ad removed"
+  },
+  "reelRemoved": {
+    "message": "Reel removed"
+  },
+  "removed": {
+    "message": "Removed"
+  }
+}

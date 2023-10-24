@@ -1,0 +1,14 @@
+{
+  "suggestionRemoved": {
+    "message": "تم حذف الاقتراح"
+  },
+  "adRemoved": {
+    "message": "تم حذف الإعلان"
+  },
+  "reelRemoved": {
+    "message": "تم حذف الرييل"
+  },
+  "removed": {
+    "message": "تم الحذف"
+  }
+}

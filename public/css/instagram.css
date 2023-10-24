@@ -1,0 +1,14 @@
+.hajib-ig-rm-container {
+    background-color: rgb(255, 190, 190);
+    color: #222;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.hajib-ig-video-container {
+    filter: blur(99px);
+}
+
+.hajib-ig-video-container_playing {
+    filter: blur(0);
+}
